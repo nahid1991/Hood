@@ -9,11 +9,12 @@
 /* Begin PBXBuildFile section */
 		BB91B272BED9BF436CA19669 /* Pods_Hood.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BE854904FC67B43A89D2D976 /* Pods_Hood.framework */; };
 		BDEBED7C23282E6100C7B016 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDEBED7B23282E6100C7B016 /* AppDelegate.swift */; };
-		BDEBED7E23282E6100C7B016 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDEBED7D23282E6100C7B016 /* ViewController.swift */; };
 		BDEBED8123282E6100C7B016 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BDEBED7F23282E6100C7B016 /* Main.storyboard */; };
 		BDEBED8323282E6300C7B016 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BDEBED8223282E6300C7B016 /* Assets.xcassets */; };
 		BDEBED8623282E6300C7B016 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BDEBED8423282E6300C7B016 /* LaunchScreen.storyboard */; };
 		BDEBED9A23315B9A00C7B016 /* SWRevealViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BDEBED9923315B9A00C7B016 /* SWRevealViewController.m */; };
+		BDEBEDA12331674900C7B016 /* ChatVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDEBEDA02331674900C7B016 /* ChatVC.swift */; };
+		BDEBEDA32331675A00C7B016 /* ChannelVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDEBEDA22331675A00C7B016 /* ChannelVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -21,7 +22,6 @@
 		BCBC3E23FBEF1B6CA66F016F /* Pods-Hood.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Hood.release.xcconfig"; path = "Pods/Target Support Files/Pods-Hood/Pods-Hood.release.xcconfig"; sourceTree = "<group>"; };
 		BDEBED7823282E6100C7B016 /* Hood.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Hood.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BDEBED7B23282E6100C7B016 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		BDEBED7D23282E6100C7B016 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		BDEBED8023282E6100C7B016 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		BDEBED8223282E6300C7B016 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		BDEBED8523282E6300C7B016 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -29,6 +29,8 @@
 		BDEBED9723315B9900C7B016 /* Hood-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Hood-Bridging-Header.h"; sourceTree = "<group>"; };
 		BDEBED9823315B9A00C7B016 /* SWRevealViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SWRevealViewController.h; sourceTree = "<group>"; };
 		BDEBED9923315B9A00C7B016 /* SWRevealViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SWRevealViewController.m; sourceTree = "<group>"; };
+		BDEBEDA02331674900C7B016 /* ChatVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatVC.swift; sourceTree = "<group>"; };
+		BDEBEDA22331675A00C7B016 /* ChannelVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChannelVC.swift; sourceTree = "<group>"; };
 		BE854904FC67B43A89D2D976 /* Pods_Hood.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Hood.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -47,7 +49,6 @@
 		BDEBED6F23282E6100C7B016 = {
 			isa = PBXGroup;
 			children = (
-				BDEBED93233154A600C7B016 /* Supporting Files */,
 				BDEBED7A23282E6100C7B016 /* Hood */,
 				BDEBED7923282E6100C7B016 /* Products */,
 				BEE2A3122DB6300BF423C6C4 /* Pods */,
@@ -66,8 +67,11 @@
 		BDEBED7A23282E6100C7B016 /* Hood */ = {
 			isa = PBXGroup;
 			children = (
+				BDEBED9F2331665200C7B016 /* View */,
+				BDEBED9E2331664C00C7B016 /* Model */,
+				BDEBED9D2331664500C7B016 /* Controller */,
+				BDEBED93233154A600C7B016 /* Supporting Files */,
 				BDEBED7B23282E6100C7B016 /* AppDelegate.swift */,
-				BDEBED7D23282E6100C7B016 /* ViewController.swift */,
 				BDEBED7F23282E6100C7B016 /* Main.storyboard */,
 				BDEBED8223282E6300C7B016 /* Assets.xcassets */,
 				BDEBED8423282E6300C7B016 /* LaunchScreen.storyboard */,
@@ -83,7 +87,31 @@
 				BDEBED9923315B9A00C7B016 /* SWRevealViewController.m */,
 				BDEBED9723315B9900C7B016 /* Hood-Bridging-Header.h */,
 			);
-			path = "Supporting Files";
+			name = "Supporting Files";
+			path = "../Supporting Files";
+			sourceTree = "<group>";
+		};
+		BDEBED9D2331664500C7B016 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				BDEBEDA02331674900C7B016 /* ChatVC.swift */,
+				BDEBEDA22331675A00C7B016 /* ChannelVC.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		BDEBED9E2331664C00C7B016 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		BDEBED9F2331665200C7B016 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 		BEE2A3122DB6300BF423C6C4 /* Pods */ = {
@@ -222,7 +250,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BDEBED7E23282E6100C7B016 /* ViewController.swift in Sources */,
+				BDEBEDA32331675A00C7B016 /* ChannelVC.swift in Sources */,
+				BDEBEDA12331674900C7B016 /* ChatVC.swift in Sources */,
 				BDEBED7C23282E6100C7B016 /* AppDelegate.swift in Sources */,
 				BDEBED9A23315B9A00C7B016 /* SWRevealViewController.m in Sources */,
 			);
