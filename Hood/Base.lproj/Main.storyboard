@@ -33,16 +33,62 @@
         <scene sceneID="9qd-0I-7KW">
             <objects>
                 <viewController id="Yhr-rt-TKI" customClass="ChannelVC" customModule="Hood" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="TCS-Fi-H16">
+                    <view key="view" contentMode="scaleToFill" id="TCS-Fi-H16" customClass="GradientView" customModule="Hood" customModuleProvider="target">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Hood" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dne-S2-fxa">
+                                <rect key="frame" x="20" y="68" width="54" height="28"/>
+                                <fontDescription key="fontDescription" name="AvenirNext-Bold" family="Avenir Next" pointSize="20"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Channels" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TcK-JR-noD">
+                                <rect key="frame" x="20" y="116" width="73" height="24"/>
+                                <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="17"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Kh5-TI-s8X">
+                                <rect key="frame" x="130" y="802.5" width="63" height="44"/>
+                                <fontDescription key="fontDescription" name="AvenirNext-Bold" family="Avenir Next" pointSize="23"/>
+                                <state key="normal" title="Login">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                            </button>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="menuProfileIcon" translatesAutoresizingMaskIntoConstraints="NO" id="R6t-4n-xpq">
+                                <rect key="frame" x="20" y="787" width="75" height="75"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="75" id="AWR-cf-OTR"/>
+                                    <constraint firstAttribute="height" constant="75" id="YRg-dD-XGj"/>
+                                </constraints>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1Ao-nh-Gwo">
+                                <rect key="frame" x="320" y="117" width="22" height="22"/>
+                                <state key="normal" image="addChannelButton"/>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="Kh5-TI-s8X" firstAttribute="leading" secondItem="R6t-4n-xpq" secondAttribute="trailing" constant="35" id="8b7-1m-bGo"/>
+                            <constraint firstItem="TcK-JR-noD" firstAttribute="leading" secondItem="zDU-Bg-6Zr" secondAttribute="leading" constant="20" id="GAA-zE-Igt"/>
+                            <constraint firstItem="dne-S2-fxa" firstAttribute="top" secondItem="zDU-Bg-6Zr" secondAttribute="top" constant="24" id="HHb-HJ-bmS"/>
+                            <constraint firstItem="Kh5-TI-s8X" firstAttribute="centerY" secondItem="R6t-4n-xpq" secondAttribute="centerY" id="TGr-oC-rbf"/>
+                            <constraint firstItem="R6t-4n-xpq" firstAttribute="leading" secondItem="zDU-Bg-6Zr" secondAttribute="leading" constant="20" id="VdG-R9-2EH"/>
+                            <constraint firstItem="zDU-Bg-6Zr" firstAttribute="trailing" secondItem="1Ao-nh-Gwo" secondAttribute="trailing" constant="72" id="XhT-Aw-nDP"/>
+                            <constraint firstItem="1Ao-nh-Gwo" firstAttribute="centerY" secondItem="TcK-JR-noD" secondAttribute="centerY" id="c00-fA-Zha"/>
+                            <constraint firstItem="dne-S2-fxa" firstAttribute="leading" secondItem="zDU-Bg-6Zr" secondAttribute="leading" constant="20" id="m1z-BS-kHJ"/>
+                            <constraint firstItem="R6t-4n-xpq" firstAttribute="bottom" secondItem="zDU-Bg-6Zr" secondAttribute="bottom" id="pbd-FK-I2w"/>
+                            <constraint firstItem="TcK-JR-noD" firstAttribute="top" secondItem="dne-S2-fxa" secondAttribute="bottom" constant="20" id="x6I-hu-Bup"/>
+                            <constraint firstItem="R6t-4n-xpq" firstAttribute="leading" secondItem="zDU-Bg-6Zr" secondAttribute="leading" constant="20" id="yQD-as-1bu"/>
+                            <constraint firstItem="R6t-4n-xpq" firstAttribute="bottom" secondItem="zDU-Bg-6Zr" secondAttribute="bottom" id="zQU-If-cMZ"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="zDU-Bg-6Zr"/>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="2PQ-81-C22" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="883" y="-313"/>
+            <point key="canvasLocation" x="882.60869565217399" y="-313.39285714285711"/>
         </scene>
         <!--ChatVC-->
         <scene sceneID="Rtj-B3-jmD">
@@ -52,7 +98,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="sYY-Ro-eNb">
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="sYY-Ro-eNb" customClass="GradientView" customModule="Hood" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="100"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yl0-MV-zmw">
@@ -98,6 +144,8 @@
         </scene>
     </scenes>
     <resources>
+        <image name="addChannelButton" width="22" height="22"/>
+        <image name="menuProfileIcon" width="99" height="99"/>
         <image name="smackBurger" width="40" height="40"/>
     </resources>
 </document>
