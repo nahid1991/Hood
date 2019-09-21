@@ -18,6 +18,7 @@
 		BDEBEDA52332917300C7B016 /* GradientView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDEBEDA42332917300C7B016 /* GradientView.swift */; };
 		BDEBEDA82336310C00C7B016 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDEBEDA72336310C00C7B016 /* Constants.swift */; };
 		BDEBEDAA23363CA800C7B016 /* LoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDEBEDA923363CA800C7B016 /* LoginVC.swift */; };
+		BDEBEDAC233646A000C7B016 /* CreateAccountVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDEBEDAB233646A000C7B016 /* CreateAccountVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -37,6 +38,7 @@
 		BDEBEDA42332917300C7B016 /* GradientView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GradientView.swift; sourceTree = "<group>"; };
 		BDEBEDA72336310C00C7B016 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		BDEBEDA923363CA800C7B016 /* LoginVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginVC.swift; sourceTree = "<group>"; };
+		BDEBEDAB233646A000C7B016 /* CreateAccountVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateAccountVC.swift; sourceTree = "<group>"; };
 		BE854904FC67B43A89D2D976 /* Pods_Hood.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Hood.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -104,6 +106,7 @@
 				BDEBEDA02331674900C7B016 /* ChatVC.swift */,
 				BDEBEDA22331675A00C7B016 /* ChannelVC.swift */,
 				BDEBEDA923363CA800C7B016 /* LoginVC.swift */,
+				BDEBEDAB233646A000C7B016 /* CreateAccountVC.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -269,6 +272,7 @@
 			files = (
 				BDEBEDA32331675A00C7B016 /* ChannelVC.swift in Sources */,
 				BDEBEDA12331674900C7B016 /* ChatVC.swift in Sources */,
+				BDEBEDAC233646A000C7B016 /* CreateAccountVC.swift in Sources */,
 				BDEBEDA52332917300C7B016 /* GradientView.swift in Sources */,
 				BDEBED7C23282E6100C7B016 /* AppDelegate.swift in Sources */,
 				BDEBED9A23315B9A00C7B016 /* SWRevealViewController.m in Sources */,
