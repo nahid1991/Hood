@@ -13,5 +13,8 @@ class CreateAccountVC: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
     }
-
+    
+    @IBAction func closeButtonPressed(_ sender: Any) {
+        performSegue(withIdentifier: UNWIND, sender: nil)
+    }
 }
