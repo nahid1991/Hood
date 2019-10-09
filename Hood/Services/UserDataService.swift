@@ -26,8 +26,13 @@ class UserDataService {
         self.name = name
     }
     
-    func setAvatarName(avatarName: String) {
+    func setAvatarName(avatarName: String, completion: @escaping CompletionHandler) {
         self.avatarName = avatarName
+        completion(true)
+    }
+    
+    func getAvatarName() -> String {
+        return self.avatarName
     }
     
 }

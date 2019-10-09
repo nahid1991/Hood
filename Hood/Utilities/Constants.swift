@@ -19,12 +19,15 @@ let URL_USER_ADD = "\(BASE_URL)user/add"
 //Segues
 let TO_LOGIN = "toLogin"
 let TO_CREATE_ACCOUNT = "toCreateAccount"
+let TO_AVATAR_PICKER = "toAvatarPicker"
 let UNWIND = "unwindToChannel"
+let UNWIND_TO_ACCOUNT_CREATE = "unwindToReg"
 
 //User defaults
 let TOKEN_KEY = "token"
 let LOGGED_IN_KEY = "loggedIn"
 let USER_EMAIL = "userEmail"
+let CHOSEN_PROFILE_IMAGE = "chosenProfileImage"
 
 //Header
 let HEADER = [

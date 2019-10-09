@@ -15,6 +15,7 @@ class CreateAccntVC: UIViewController {
     @IBOutlet weak var emailTxt: UITextField!
     @IBOutlet weak var passwordTxt: UITextField!
     @IBOutlet weak var userImg: UIImageView!
+    var instanceOfAvatarControllerVC: AvatarControllerVC!
     
     // Variable
     var avatarName = "profileDefault"
@@ -24,11 +25,21 @@ class CreateAccntVC: UIViewController {
         super.viewDidLoad()
     }
     
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(true)
+        
+        if UserDataService.instance.avatarName != "" && self.isBeingPresented {
+            self.userImg.image = UIImage(named: UserDataService.instance.avatarName)
+            self.avatarName = UserDataService.instance.avatarName
+        }
+    }
+    
     @IBAction func closeButtonPressed(_ sender: Any) {
         performSegue(withIdentifier: UNWIND, sender: nil)
     }
     
     @IBAction func pickAvatarPressed(_ sender: Any) {
+        performSegue(withIdentifier: TO_AVATAR_PICKER, sender: nil)
     }
     
     @IBAction func pickBgColorPressed(_ sender: Any) {
