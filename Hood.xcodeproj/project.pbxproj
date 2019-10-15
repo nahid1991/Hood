@@ -24,6 +24,7 @@
 		BDEBEDA82336310C00C7B016 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDEBEDA72336310C00C7B016 /* Constants.swift */; };
 		BDEBEDAA23363CA800C7B016 /* LoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDEBEDA923363CA800C7B016 /* LoginVC.swift */; };
 		BDEBEDAC233646A000C7B016 /* CreateAccntVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDEBEDAB233646A000C7B016 /* CreateAccntVC.swift */; };
+		BDF9C7B2235252E900DAAC37 /* CircleImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDF9C7B1235252E900DAAC37 /* CircleImage.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -49,6 +50,7 @@
 		BDEBEDA72336310C00C7B016 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		BDEBEDA923363CA800C7B016 /* LoginVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginVC.swift; sourceTree = "<group>"; };
 		BDEBEDAB233646A000C7B016 /* CreateAccntVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateAccntVC.swift; sourceTree = "<group>"; };
+		BDF9C7B1235252E900DAAC37 /* CircleImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircleImage.swift; sourceTree = "<group>"; };
 		BE854904FC67B43A89D2D976 /* Pods_Hood.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Hood.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -145,6 +147,7 @@
 				BDEBEDA42332917300C7B016 /* GradientView.swift */,
 				BD4633FC2342734000655FFB /* RoundedButton.swift */,
 				BD4634022348561000655FFB /* AvatarCell.swift */,
+				BDF9C7B1235252E900DAAC37 /* CircleImage.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -296,6 +299,7 @@
 				BDEBEDA32331675A00C7B016 /* ChannelVC.swift in Sources */,
 				BD4633FD2342734000655FFB /* RoundedButton.swift in Sources */,
 				BDEBEDA12331674900C7B016 /* ChatVC.swift in Sources */,
+				BDF9C7B2235252E900DAAC37 /* CircleImage.swift in Sources */,
 				BD4634012347D19900655FFB /* AvatarControllerVC.swift in Sources */,
 				BD4633FF2347BD6F00655FFB /* UserDataService.swift in Sources */,
 				BDEBEDAC233646A000C7B016 /* CreateAccntVC.swift in Sources */,

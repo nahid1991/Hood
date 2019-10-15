@@ -8,6 +8,10 @@
 
 import UIKit
 
+protocol AvatarControllerVCDelegate: class {
+    func setProfilePic(image: String)
+}
+
 class AvatarControllerVC: UIViewController, UICollectionViewDelegate, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout {
     
     // Outlets
@@ -18,6 +22,7 @@ class AvatarControllerVC: UIViewController, UICollectionViewDelegate, UICollecti
     // Variables
     var avatarType = AvatarType.dark
     var instanceOfCreateAccntVC: CreateAccntVC!
+    weak var delegate: AvatarControllerVCDelegate?
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -40,19 +45,19 @@ class AvatarControllerVC: UIViewController, UICollectionViewDelegate, UICollecti
         collectionView.reloadData()
     }
     
-    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
-        var numOfColumns: CGFloat = 3
-        let spaceBetweenCells: CGFloat = 10
-        let padding: CGFloat = 40
-        
-        if UIScreen.main.bounds.width > 320 {
-            numOfColumns = 4
-        }
-        
-        let cellDimension = ((collectionView.bounds.width - padding) - (numOfColumns - 1) * spaceBetweenCells) / numOfColumns
-        
-        return CGSize(width: cellDimension, height: cellDimension)
-    }
+//    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
+//        var numOfColumns: CGFloat = 3
+//        let spaceBetweenCells: CGFloat = 10
+//        let padding: CGFloat = 40
+//        
+//        if UIScreen.main.bounds.width > 375 {
+//            numOfColumns = 4
+//        }
+//        
+//        let cellDimension = ((collectionView.bounds.width - padding) - (numOfColumns - 1) * spaceBetweenCells) / numOfColumns
+//        
+//        return CGSize(width: cellDimension, height: cellDimension)
+//    }
     
     func numberOfSections(in collectionView: UICollectionView) -> Int {
         return 1
@@ -69,13 +74,9 @@ class AvatarControllerVC: UIViewController, UICollectionViewDelegate, UICollecti
             avatarString = "light"
         }
         
-        UserDataService.instance.setAvatarName(avatarName: "\(avatarString)\(indexPath.item)") { (success) in
-            if UserDataService.instance.avatarName != "" {
-                self.dismiss(animated: true, completion: nil)
-            } else {
-                debugPrint("Something went wrong!")
-            }
-        }
+        self.delegate?.setProfilePic(image: "\(avatarString)\(indexPath.item)")
+        UserDataService.instance.avatarName = "\(avatarString)\(indexPath.item)"
+        self.dismiss(animated: true, completion: nil)
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {

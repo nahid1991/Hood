@@ -26,9 +26,11 @@ class AvatarCell: UICollectionViewCell {
         if type == AvatarType.dark {
             avatarimg.image = UIImage(named: "dark\(index)")
             self.layer.backgroundColor = UIColor.lightGray.cgColor
+            self.clipsToBounds = true
         } else {
             avatarimg.image = UIImage(named: "light\(index)")
             self.layer.backgroundColor = UIColor.gray.cgColor
+            self.clipsToBounds = true
         }
     }
     
