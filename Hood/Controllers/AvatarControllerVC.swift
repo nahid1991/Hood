@@ -45,20 +45,6 @@ class AvatarControllerVC: UIViewController, UICollectionViewDelegate, UICollecti
         collectionView.reloadData()
     }
     
-//    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
-//        var numOfColumns: CGFloat = 3
-//        let spaceBetweenCells: CGFloat = 10
-//        let padding: CGFloat = 40
-//        
-//        if UIScreen.main.bounds.width > 375 {
-//            numOfColumns = 4
-//        }
-//        
-//        let cellDimension = ((collectionView.bounds.width - padding) - (numOfColumns - 1) * spaceBetweenCells) / numOfColumns
-//        
-//        return CGSize(width: cellDimension, height: cellDimension)
-//    }
-    
     func numberOfSections(in collectionView: UICollectionView) -> Int {
         return 1
     }

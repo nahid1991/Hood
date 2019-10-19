@@ -12,12 +12,6 @@ class UserDataService {
     
     static let instance = UserDataService()
     
-//    public private(set) var id = ""
-//    public private(set) var avatarColor = ""
-//    public private(set) var avatarName = ""
-//    public private(set) var email = ""
-//    public private(set) var name = ""
-    
     let defaults = UserDefaults.standard
     
     var id: String {
@@ -70,7 +64,6 @@ class UserDataService {
         let skipped = CharacterSet(charactersIn: "[], ")
         let comma = CharacterSet(charactersIn: ",")
         scanner.charactersToBeSkipped = skipped
-        print(components)
         
         var converted: NSString?
         var rFloat, gFloat, bFloat, aFloat: CGFloat

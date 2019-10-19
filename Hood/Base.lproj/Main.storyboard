@@ -199,6 +199,9 @@
                                                 <real key="value" value="5"/>
                                             </userDefinedRuntimeAttribute>
                                         </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="loginBtnPressed:" destination="qvy-jU-LXN" eventType="touchUpInside" id="C7f-ar-c3L"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                             </stackView>
@@ -210,6 +213,10 @@
                                     <action selector="createAccountButtonPressed:" destination="qvy-jU-LXN" eventType="touchUpInside" id="S6j-10-MZ2"/>
                                 </connections>
                             </button>
+                            <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="whiteLarge" translatesAutoresizingMaskIntoConstraints="NO" id="92m-Ka-sHe">
+                                <rect key="frame" x="169" y="160.66666666666666" width="37" height="37"/>
+                                <color key="color" red="0.25490196079999999" green="0.36862745099999999" blue="0.70196078429999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </activityIndicatorView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
@@ -217,6 +224,8 @@
                             <constraint firstItem="TCx-dF-qqA" firstAttribute="top" secondItem="CCr-c7-JlC" secondAttribute="top" constant="60" id="Jhh-WL-upd"/>
                             <constraint firstItem="tAL-DO-duN" firstAttribute="top" secondItem="YJa-Bv-awb" secondAttribute="bottom" constant="10" id="Oeg-i4-qZy"/>
                             <constraint firstItem="TCx-dF-qqA" firstAttribute="centerX" secondItem="IR0-ei-dDa" secondAttribute="centerX" id="Si5-sD-nBg"/>
+                            <constraint firstItem="92m-Ka-sHe" firstAttribute="centerY" secondItem="IR0-ei-dDa" secondAttribute="centerY" constant="-200" id="W4y-4I-yXS"/>
+                            <constraint firstItem="92m-Ka-sHe" firstAttribute="centerX" secondItem="IR0-ei-dDa" secondAttribute="centerX" id="ayv-ER-oTZ"/>
                             <constraint firstItem="cqZ-aA-wkY" firstAttribute="top" secondItem="CCr-c7-JlC" secondAttribute="top" constant="20" id="bEV-t8-qSF"/>
                             <constraint firstItem="tAL-DO-duN" firstAttribute="centerX" secondItem="IR0-ei-dDa" secondAttribute="centerX" id="cAc-G5-dec"/>
                             <constraint firstItem="CCr-c7-JlC" firstAttribute="trailing" secondItem="cqZ-aA-wkY" secondAttribute="trailing" constant="20" id="kOp-GH-Yqg"/>
@@ -225,6 +234,9 @@
                         <viewLayoutGuide key="safeArea" id="CCr-c7-JlC"/>
                     </view>
                     <connections>
+                        <outlet property="passwordTxt" destination="C6T-4R-TeQ" id="gXS-Xe-9ZS"/>
+                        <outlet property="spinner" destination="92m-Ka-sHe" id="EzE-tb-PeH"/>
+                        <outlet property="usernameTxt" destination="am1-HD-B4A" id="dA5-B8-aei"/>
                         <segue destination="ekh-1j-8E5" kind="show" identifier="toCreateAccount" id="rFd-xg-CpP"/>
                     </connections>
                 </viewController>
@@ -343,8 +355,9 @@
                                     <action selector="pickBgColorPressed:" destination="ekh-1j-8E5" eventType="touchUpInside" id="aB2-6Y-8ve"/>
                                 </connections>
                             </button>
-                            <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="medium" translatesAutoresizingMaskIntoConstraints="NO" id="7WC-eJ-cGq">
-                                <rect key="frame" x="177.66666666666666" y="269" width="20" height="20"/>
+                            <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="whiteLarge" translatesAutoresizingMaskIntoConstraints="NO" id="7WC-eJ-cGq">
+                                <rect key="frame" x="169" y="260.66666666666669" width="37" height="37"/>
+                                <color key="color" red="0.25490196079999999" green="0.36862745099999999" blue="0.70196078429999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             </activityIndicatorView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
