@@ -139,9 +139,9 @@ class ChatVC: UIViewController, UITableViewDelegate, UITableViewDataSource {
         } else {
             if isTyping == false {
                 self.sendBtn.isHidden = false
-                SocketService.instance.socket.emit("startType", UserDataService.instance.name, channelId)
             }
             isTyping = true
+            SocketService.instance.socket.emit("startType", UserDataService.instance.name, channelId)
         }
     }
     
